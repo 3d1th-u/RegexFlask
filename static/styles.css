@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fffffff8;
+  color: #000000;
+  padding: 20px;
+}
+textarea {
+  width: 100%;
+  height: 120px;
+  font-size: 16px;
+  padding: 10px;
+}
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:hover {
+  background: #0056b3;
+}
+.resultado {
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid #d6d5d5;
+  background: #ffffff;
+  min-height: 50px;
+}
+.correo { background-color: rgba(0, 255, 0, 0.434); }
+.telefono { background-color: rgba(0, 64, 255, 0.438); }
+.fecha { background-color: rgba(253, 253, 60, 0.475); }
