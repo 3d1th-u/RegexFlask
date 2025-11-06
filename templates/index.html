@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Validación con Expresiones Regulares con Flask</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <h1>Validación de texto con Expresiones Regulares (Flask)</h1>
+  <p>Introduce un texto con correos, teléfonos o fechas (dd/mm/yyyy):</p>
+
+  <form method="POST">
+    <textarea name="texto" placeholder="Ejemplo: contacto@mail.com, 5522334455, 05/11/2025">{{ texto }}</textarea><br>
+    <button type="submit">Validar texto</button>
+  </form>
+
+  {% if resultado %}
+  <h2>Texto resaltado:</h2>
+  <div class="resultado">{{ resultado|safe }}</div>
+  {% endif %}
+</body>
+</html>
